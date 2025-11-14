@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish Catalog - SAA Aquatic World</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://i.ibb.co/v4CNbGC/logo.png" alt="SAA Home Breed Pets and Fishes">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html" class="active">Catalog</a></li>
+        <li><a href="bag.html">Bag <span id="bag-count" class="bag-count">0</span></a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+  
+  <section class="catalog-hero">
+    <h1>Our Fish Collection</h1>
+    <p>Discover a wide variety of beautiful and healthy fishes</p>
+  </section>
+  
+  <section class="catalog-controls">
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search for fish...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+    <div class="filters">
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="freshwater">Freshwater</option>
+        <option value="saltwater">Saltwater</option>
+        <option value="tropical">Tropical</option>
+      </select>
+      <select id="price-filter">
+        <option value="all">All Prices</option>
+        <option value="low">Under ₹500</option>
+        <option value="medium">₹500 - ₹2000</option>
+        <option value="high">Over ₹2000</option>
+      </select>
+      <select id="sort-by">
+        <option value="featured">Featured</option>
+        <option value="low-high">Price: Low to High</option>
+        <option value="high-low">Price: High to Low</option>
+        <option value="name">Name (A-Z)</option>
+      </select>
+    </div>
+  </section>
+  
+  <section class="fish-catalog">
+    <div class="fish-grid">
+      <div class="fish-card" data-category="freshwater" data-price="medium">
+        <img src="C:\Users\Syed Areeb Affan\OneDrive\Desktop\fish site updated 28-09-2025\gold-fish.jpg" alt="Goldfish">
+        <div class="fish-info">
+          <h3>Goldfish</h3>
+          <p>Popular freshwater fish with vibrant colors</p>
+          <div class="fish-details">
+            <span class="price">₹850</span>
+            <span class="rating">★★★★☆ (4.2)</span>
+          </div>
+          <button class="add-to-bag">Add to Bag</button>
+        </div>
+      </div>
+      
+      <div class="fish-card" data-category="tropical" data-price="low">
+        <img src="C:\Users\Syed Areeb Affan\OneDrive\Desktop\fish site updated 28-09-2025\guppy.jpeg" alt="Guppy">
+        <div class="fish-info">
+          <h3>Guppy</h3>
+          <p>Colorful and easy to care for tropical fish</p>
+          <div class="fish-details">
+            <span class="price">₹150</span>
+            <span class="rating">★★★★★ (4.8)</span>
+          </div>
+          <button class="add-to-bag">Add to Bag</button>
+        </div>
+      </div>
+      
+      <div class="fish-card" data-category="saltwater" data-price="high">
+        <img src="C:\Users\Syed Areeb Affan\OneDrive\Desktop\fish site updated 28-09-2025\clown-fish.jpeg" alt="Clownfish">
+        <div class="fish-info">
+          <h3>Clownfish</h3>
+          <p>Iconic saltwater fish made famous by Finding Nemo</p>
+          <div class="fish-details">
+            <span class="price">₹2,500</span>
+            <span class="rating">★★★★☆ (4.5)</span>
+          </div>
+          <button class="add-to-bag">Add to Bag</button>
+        </div>
+      </div>
+      
+      <div class="fish-card" data-category="freshwater" data-price="medium">
+        <img src="C:\Users\Syed Areeb Affan\OneDrive\Desktop\fish site updated 28-09-2025\angel-fish.jpeg" alt="Angelfish">
+        <div class="fish-info">
+          <h3>Angelfish</h3>
+          <p>Graceful freshwater fish with distinctive fins</p>
+          <div class="fish-details">
+            <span class="price">₹1,200</span>
+            <span class="rating">★★★★☆ (4.3)</span>
+          </div>
+          <button class="add-to-bag">Add to Bag</button>
+        </div>
+      </div>
+      
+      <div class="fish-card" data-category="tropical" data-price="low">
+        <img src="C:\Users\Syed Areeb Affan\OneDrive\Desktop\fish site updated 28-09-2025\Neon-Tetra.jpeg" alt="Neon Tetra">
+        <div class="fish-info">
+          <h3>Neon Tetra</h3>
+          <p>Small schooling fish with bright blue and red stripes</p>
+          <div class="fish-details">
+            <span class="price">₹90</span>
+            <span class="rating">★★★★☆ (4.6)</span>
+          </div>
+          <button class="add-to-bag">Add to Bag</button>
+        </div>
+      </div>
+      
+      <div class="fish-card" data-category="saltwater" data-price="high">
+        <img src="C:\Users\Syed Areeb Affan\OneDrive\Desktop\fish site updated 28-09-2025\Blue-Tang.jpeg" alt="Blue Tang">
+        <div class="fish-info">
+          <h3>Blue Tang</h3>
+          <p>Beautiful saltwater fish known as "Dory"</p>
+          <div class="fish-details">
+            <span class="price">₹3,800</span>
+            <span class="rating">★★★★☆ (4.4)</span>
+          </div>
+          <button class="add-to-bag">Add to Bag</button>
+        </div>
+      </div>
+      
+      <div class="fish-card" data-category="freshwater" data-price="medium">
+        <img src="C:\Users\Syed Areeb Affan\OneDrive\Desktop\fish site updated 28-09-2025\betta.jpeg" alt="Betta Fish">
+        <div class="fish-info">
+          <h3>Betta Fish</h3>
+          <p>Stunning freshwater fish with flowing fins</p>
+          <div class="fish-details">
+            <span class="price">₹650</span>
+            <span class="rating">★★★★☆ (4.7)</span>
+          </div>
+          <button class="add-to-bag">Add to Bag</button>
+        </div>
+      </div>
+      
+      <div class="fish-card" data-category="tropical" data-price="low">
+        <img src="C:\Users\Syed Areeb Affan\OneDrive\Desktop\fish site updated 28-09-2025\platy.jpeg" alt="Platy">
+        <div class="fish-info">
+          <h3>Platy</h3>
+          <p>Peaceful community fish with varied colors</p>
+          <div class="fish-details">
+            <span class="price">₹120</span>
+            <span class="rating">★★★★☆ (4.0)</span>
+          </div>
+          <button class="add-to-bag">Add to Bag</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer-content">
+      <div class="footer-icons">
+        <div><i class="fas fa-truck"></i> Free Delivery (above ₹5000)</div>
+        <div><i class="fas fa-shield-alt"></i> Buyer Protection</div>
+        <div><i class="fas fa-headset"></i> Customer Support</div>
+      </div>
+      <div class="footer-info">
+        <h2>SAA HOME BREED PETS</h2>
+        <p>FAST AND SAFE DELIVERY/ LIVE FISH / AQUA PLANTS / ACCESSORIES / TN-WIDE</p>
+        <p>PDA College of Engineering</p>
+        <p>GSTIN: UDYAM-TN-12-002</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policies</a>
+        <a href="#">Refund Policies</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="catalog.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Update bag count
+      function updateBagCount() {
+        const bag = JSON.parse(localStorage.getItem('shoppingBag')) || [];
+        const bagCount = document.getElementById('bag-count');
+        const totalItems = bag.reduce((total, item) => total + item.quantity, 0);
+        bagCount.textContent = totalItems;
+        bagCount.style.display = totalItems > 0 ? 'inline' : 'none';
+      }
+
+      updateBagCount();
+
+      // Mobile menu
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
+      
+      mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
+</body>
+</html>

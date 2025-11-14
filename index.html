@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAA Aquatic World</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    #outline {
+      stroke-dasharray: 2.42777px, 242.77666px;
+      stroke-dashoffset: 0;
+      animation: anim 1.6s linear infinite;
+    }
+    @keyframes anim {
+      12.5% { stroke-dasharray: 33.98873px, 242.77666px; stroke-dashoffset: -26.70543px; }
+      43.75% { stroke-dasharray: 84.97183px, 242.77666px; stroke-dashoffset: -84.97183px; }
+      100% { stroke-dasharray: 2.42777px, 242.77666px; stroke-dashoffset: -240.34889px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loading-screen" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+  <div>
+    <svg style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 187.3 93.7" height="300px" width="400px">
+      <path id="outline" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" stroke="#4E4FEB" stroke-width="4" fill="none"/>
+      <path id="outline-bg" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" stroke="#4E4FEB" stroke-width="4" fill="none" opacity="0.05"/>
+    </svg>
+    <p class="text-center mt-4" id="loading-text">Loading...</p>
+  </div>
+</div>
+
+<!-- Navigation -->
+<header>
+  <nav>
+    <div class="logo">
+      <img src="https://i.ibb.co/v4CNbGC/logo.png" alt="SAA Home Breed Pets and Fishes">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="catalog.html">Catalog</a></li>
+      <li><a href="bag.html">Bag <span id="bag-count" class="bag-count">0</span></a></li>
+      <li><a href="#">Account</a></li>
+    </ul>
+    <div class="mobile-menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to SAA Home Breed Fishes</h1>
+    <p>Find the best aquarium fishes, medicine, filters, and more!</p>
+    <a href="catalog.html" class="btn">Shop Now</a>
+  </div>
+  <div class="hero-image">
+    <img src="https://i.ibb.co/n1QScMd/Getty-Images-154933437-56a330a15f9b58b7d0d0e1f3.webp" alt="Aquarium Fishes">
+  </div>
+</section>
+
+<!-- Video Section -->
+<section id="video-section">
+  <h2>Watch Our Fish Collection</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/vcFybcBrE8o" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- Image Banner -->
+<section id="image-banner">
+  <img src="https://i.ibb.co/0n7kqH4/fish-banner.jpg" alt="Fish Collection Banner">
+  <div class="banner-text">
+    <h2>Discover Our Exclusive Fish Range</h2>
+    <a href="catalog.html" class="cta-button">Explore More</a>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services-section">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <i class="fas fa-truck fa-3x"></i>
+        <h3>Fast Delivery</h3>
+       <!-- Image Banner  <img src="C:\Users\Syed Areeb Affan\OneDrive\Desktop\fish site updated 28-09-2025\fast-delivery.png" alt="Fish Delivery">-->
+        <p>Quick delivery of all aquarium needs to your doorstep.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-fish fa-3x"></i>
+        <h3>Quality Food</h3>
+        <!--<img src="C:\Users\Syed Areeb Affan\OneDrive\Desktop\fish site updated 28-09-2025\quality.jpeg" alt="Fish Delivery">-->
+        <p>High-quality fish food for the best nutrition.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-aquarium fa-3x"></i>
+        <h3>Aquarium Setup</h3>
+        <!--<img src="C:\Users\Syed Areeb Affan\OneDrive\Desktop\fish site updated 28-09-2025\Aquarium Setup.jpeg" alt="Fish Delivery">-->
+        <p>Expert setup guidance for a beautiful home aquarium.</p>
+      </div>
+      <div class="service">
+        <i class="fas fa-hand-holding-water fa-3x"></i>
+        <h3>Grooming Services</h3>
+        <p>Professional grooming to keep your aquatic friends healthy.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonial" class="testimonial-section">
+  <div class="container">
+    <h2>Customer Testimonials</h2>
+    <div class="testimonial">
+      <div class="testimonial-image">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+      </div>
+      <div class="testimonial-text">
+        <h3>"Amazing Service!"</h3>
+        <p>"SAA Home Breed Pets gave me the best aquarium setup. The fish are healthy and vibrant. Highly recommend their services!"</p>
+        <p>- Rajesh Kumar</p>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial-image">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+      </div>
+      <div class="testimonial-text">
+        <h3>"Excellent Quality!"</h3>
+        <p>"The fish I purchased are of exceptional quality. The delivery was fast and the packaging was secure. Will definitely buy again!"</p>
+        <p>- Priya Sharma</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact-section">
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form class="vertical-form" action="https://submit-form.com/St98Poetu">
+      <label for="first-name">First Name</label>
+      <input id="first-name" name="first-name" type="text" required />
+      <label for="last-name">Last Name</label>
+      <input id="last-name" name="last-name" type="text" required />
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="contact-image">
+    <img src="https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Contact">
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-icons">
+      <div><i class="fas fa-truck"></i> Free Delivery (above ₹5000)</div>
+      <div><i class="fas fa-shield-alt"></i> Buyer Protection</div>
+      <div><i class="fas fa-headset"></i> Customer Support</div>
+    </div>
+    <div class="footer-info">
+      <h2>SAA HOME BREED PETS</h2>
+      <p>FAST AND SAFE DELIVERY/ LIVE FISH / AQUA PLANTS / ACCESSORIES / TN-WIDE</p>
+      <p>PDA College of Engineering</p>
+      <p>GSTIN: UDYAM-TN-12-002</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Terms and Conditions</a>
+      <a href="#">Privacy Policies</a>
+      <a href="#">Refund Policies</a>
+      <a href="#">Sitemap</a>
+      <a href="#">Contact Us</a>
+      <a href="#">About Us</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Hide loading screen
+    setTimeout(() => {
+      document.getElementById('loading-screen').style.display = 'none';
+    }, 2000);
+
+    // Update bag count
+    function updateBagCount() {
+      const bag = JSON.parse(localStorage.getItem('shoppingBag')) || [];
+      const bagCount = document.getElementById('bag-count');
+      const totalItems = bag.reduce((total, item) => total + item.quantity, 0);
+      bagCount.textContent = totalItems;
+      bagCount.style.display = totalItems > 0 ? 'inline' : 'none';
+    }
+
+    updateBagCount();
+
+    // Mobile menu
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    }
+  });
+</script>
+
+</body>
+</html>

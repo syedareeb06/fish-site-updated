@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Bag - SAA Aquatic World</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="https://i.ibb.co/v4CNbGC/logo.png" alt="SAA Home Breed Pets and Fishes">
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="bag.html" class="active">Bag <span id="bag-count" class="bag-count">0</span></a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+      <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <section class="catalog-hero">
+    <h1>Your Shopping Bag</h1>
+    <p>Review your selected items and proceed to checkout</p>
+  </section>
+
+  <section class="bag-section">
+    <div class="bag-container">
+      <div class="bag-items" id="bag-items">
+        <!-- Bag items will be dynamically loaded here -->
+        <div class="empty-bag" id="empty-bag">
+          <i class="fas fa-shopping-bag" style="font-size: 4rem; color: var(--color-teal); margin-bottom: 20px;"></i>
+          <h3>Your bag is empty</h3>
+          <p>Add some beautiful fishes to your bag!</p>
+          <a href="catalog.html" class="btn" style="margin-top: 20px;">Browse Catalog</a>
+        </div>
+      </div>
+
+      <div class="order-summary" id="order-summary" style="display: none;">
+        <h3>Order Summary</h3>
+        <div class="summary-details">
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="subtotal">₹0</span>
+          </div>
+          <div class="summary-row">
+            <span>Delivery</span>
+            <span id="delivery">₹0</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span id="total">₹0</span>
+          </div>
+        </div>
+        <button class="checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-icons">
+        <div><i class="fas fa-truck"></i> Free Delivery (above ₹5000)</div>
+        <div><i class="fas fa-shield-alt"></i> Buyer Protection</div>
+        <div><i class="fas fa-headset"></i> Customer Support</div>
+      </div>
+      <div class="footer-info">
+        <h2>SAA HOME BREED PETS</h2>
+        <p>FAST AND SAFE DELIVERY/ LIVE FISH / AQUA PLANTS / ACCESSORIES / TN-WIDE</p>
+        <p>PDA College of Engineering</p>
+        <p>GSTIN: UDYAM-TN-12-002</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Privacy Policies</a>
+        <a href="#">Refund Policies</a>
+        <a href="#">Sitemap</a>
+        <a href="#">Contact Us</a>
+        <a href="#">About Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="bag.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Update bag count
+      function updateBagCount() {
+        const bag = JSON.parse(localStorage.getItem('shoppingBag')) || [];
+        const bagCount = document.getElementById('bag-count');
+        const totalItems = bag.reduce((total, item) => total + item.quantity, 0);
+        bagCount.textContent = totalItems;
+        bagCount.style.display = totalItems > 0 ? 'inline' : 'none';
+      }
+
+      updateBagCount();
+
+      // Mobile menu
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
+      
+      mobileMenuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
+</body>
+</html>
